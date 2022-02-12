@@ -1,6 +1,10 @@
-SQL DATABASE INFORMATION<PLEASE READ:
+Create database in phpmyadmin(localhost/phpmyadmin) titled 'WordpressDatabase' first after installing XAMPP and before adding the wordpress files from github repository.
+
+After files are added:
+Goto localhost/index.php
+Information for database:
 Database:WordpressDatabase
 user:root                                
 password: leave blank                                
                                 
-Create database in phpmyadmin titled 'WordpressDatabase' first before going through everything with wordpress
+
