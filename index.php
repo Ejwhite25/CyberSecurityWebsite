@@ -8,6 +8,10 @@ The dynamic blend of Western’s liberal arts and computer science courses will 
 To start building your resume, you can apply for competitive, paid internships with Lockheed Martin, Amazon, Northrup Grumman and more. 
 For opportunities on-campus, you can work for the Western IT Department and help protect the university’s cyber network. 
 Due to the increasing demand for this skillset, you’ll enter the workforce prepared for challenging work and great career opportunities.</p>
+<h1> Program Certifications</h1>
+<p>NSA CAE-CD Certified</p>
+ <img src = "https://cyber.tstc.edu/wp-content/uploads/2018/09/Seals-1.jpg"
+      alt = "Learn HTML5" height = "250" width = "300" />
 <h1>Program Requirements</h1>
 <p> Core of Computer Science</p>
 <table>
@@ -73,10 +77,41 @@ Due to the increasing demand for this skillset, you’ll enter the workforce pre
 <td><h2>Total Credits</h2></td>
 <td><h2>30</h2></td>
 </tr>
+<tr>
+<td>CS 170</td>
+<td>Information Security and Hacking</td>
+<td>3</td>	
+</tr>
+<tr>
+<td>CS 235</td>	
+<td>Computers Networks</td>	
+<td>3</td>
+</tr>
+<tr>
+<td>CS 360</td>
+<td>System Security</td>
+<td>3</td>
+</tr>
+<tr>
+<td>CS 450</td>	
+<td>Ethical Hacking and Malware</td>
+<td>3</td>
+</tr>
+<tr>
+<td>CS 460</td>	
+<td>Network Security</td>	
+<td>3</td>
+</tr>
+<tr>
+<td>Math 140</td>
+<td>College Algebra</td>
+<td>3</td>
+</tr>
 </tbody>
 </table>
+
 <h3>Contact Us</h3>
-<p>Contact either MArc or Doug for any questions or speaking opportunities!</p>
+<p>Contact either Marc or Doug for any questions or speaking opportunities!</p>
 <a href="ContactForm.html">Contact Form</a>'
 ;
 /**
