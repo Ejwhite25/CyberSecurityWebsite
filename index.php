@@ -76,6 +76,7 @@ Due to the increasing demand for this skillset, you’ll enter the workforce pre
 </tbody>
 </table>
 <h3>Contact Us</h3>
+<p>Contact either MArc or Doug for any questions or speaking opportunities!</p>
 <a href="ContactForm.html">Contact Form</a>'
 ;
 /**
