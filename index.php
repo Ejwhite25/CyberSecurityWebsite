@@ -74,7 +74,10 @@ Due to the increasing demand for this skillset, you’ll enter the workforce pre
 <td><h2>30</h2></td>
 </tr>
 </tbody>
-</table>';
+</table>
+<h3>Contact Us</h3>
+<a href="ContactForm.html">Contact Form</a>'
+;
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads
  * wp-blog-header.php which does and tells WordPress to load the theme.
