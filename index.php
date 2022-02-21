@@ -11,9 +11,10 @@ Due to the increasing demand for this skillset, you’ll enter the workforce pre
 <h1> Program Certifications</h1>
 <p>NSA CAE-CD Certified</p>
  <img src = "https://cyber.tstc.edu/wp-content/uploads/2018/09/Seals-1.jpg"
-      alt = "Learn HTML5" height = "250" width = "300" />
-<h1>Program Requirements</h1>
-<p> Core of Computer Science</p>
+      alt = "CAE-CD Certification" height = "250" width = "300" />
+      <heading class="bordered border-light">
+	<h2 class="small expanded">Program Requirements</h2>
+</heading>
 <table>
 <thead>
 <tr>
@@ -103,16 +104,30 @@ Due to the increasing demand for this skillset, you’ll enter the workforce pre
 <td>3</td>
 </tr>
 <tr>
-<td>Math 140</td>
+<td>MAT 140</td>
 <td>College Algebra</td>
 <td>3</td>
 </tr>
 </tbody>
 </table>
+<colgroup>
+<col class="codecol">
+<col class="titlecol">
+<col class="hourscol">
+</colgroup>
+<h1>Degree Plan</h1>
 
-<h3>Contact Us</h3>
+
+<h1>Contact Us</h1>
 <p>Contact either Marc or Doug for any questions or speaking opportunities!</p>
-<a href="ContactForm.html">Contact Form</a>'
+<a href="ContactForm.html">Contact Form</a>
+
+<h1>Informational resources</h1>
+<p>For more information on how to stay safe online and protect yourself, check out these resources!</p>
+<ul>
+<li><a href="https://www.consumer.ftc.gov/articles/protect-your-personal-information-and-data">Protecting your personal information</a></li>
+<li><a href="https://www.fbi.gov/scams-and-safety/on-the-internet">Protecting your devices</a></li>
+</ul>'
 ;
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads
@@ -126,7 +141,7 @@ Due to the increasing demand for this skillset, you’ll enter the workforce pre
  *
  * @var bool
  */
-define( 'WP_USE_THEMES', true );
+define( 'WP_USE_THEMES', false );
 
 /** Loads the WordPress Environment and Template */
 require __DIR__ . '/wp-blog-header.php';
