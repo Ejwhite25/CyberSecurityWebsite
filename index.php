@@ -61,6 +61,7 @@ table {
 <td>CS 280</td>
 <td>Data Structures</td>
 <td>3</td>
+<td>Sam Micka</td>
 </tr>
 <tr>
 <td>CS 330</td>
