@@ -166,7 +166,7 @@ table {
 </tr>
 <tr>
 <td>ENG 102</td>
-<td>Academic Writing (GT_CO1)</td>
+<td>Academic Writing (GT-CO1)</td>
 <td>3</td>
 </tr>
 <tr>
