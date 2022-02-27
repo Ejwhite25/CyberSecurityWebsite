@@ -232,6 +232,71 @@ or Calculus I (GT-MA1)
 <td style="font-weight:bold">Credits</td>
 <td>15</td>
 </tr>
+<tr>
+<td>Year Two</td>
+</tr>
+<tr>
+<td style="font-weight:bold">Fall</td>
+<td>       </td>
+</tr>
+<tr>
+<td>CS 280</td>
+<td>Data Structures</td>
+<td>3</td>
+</tr>
+<tr>
+<td>CS 330 OR CS 250</td>
+<td>Operating Systems & Architecture or Web Applications Development I</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Elective</td>
+<td>Elective or minor course</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Gen Ed</td>
+<td>Natural Sciences w lab</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Gen Ed</td>
+<td>Social Sciences</td>
+<td>3</td>
+</tr>
+<tr>
+<td>         </td>
+<td style="font-weight:bold">Credits</td>
+<td>16</td>
+</tr>
+<tr>
+<td style="font-weight:bold">Spring</td>
+</tr>
+<tr>
+<td>Com 202</td>
+<td>Academic Writing and inquiry(GT-CO2)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>CS 412</td>
+<td>Software Engineering</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Elective</td>
+<td>Elective or minor course</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Gen Ed</td>
+<td>Natural Sciences w/lab</td>
+<td>3</td>
+</tr>
+<tr>
+<td>         </td>
+<td style="font-weight:bold">Credits</td>
+<td>16</td>
+</tr>
 </tbody>
 </table>
 <h1>Contact Us</h1>
