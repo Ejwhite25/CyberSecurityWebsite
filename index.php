@@ -139,7 +139,10 @@ table {
 </tbody>
 </tr>
 </table>
-<colgroup>
+<h1>Degree Plan</h1>
+<p>Check out our degree plan to find more information on what each year in our program will look like!</p>
+<p><a href="DegreePlan.html">Degree Plan</a></p>
+<!---<colgroup>
 <col class="codecol">
 <col class="titlecol">
 <col class="hourscol">
@@ -315,7 +318,7 @@ or Calculus I (GT-MA1)
 </tr>
 
 </tbody>
-</table>
+</table>--->
 <h1>Contact Us</h1>
 <p>Contact either Marc or Doug for any questions or speaking opportunities!</p>
 <a href="ContactForm.html">Contact Form</a>
@@ -325,6 +328,7 @@ or Calculus I (GT-MA1)
 <ul>
 <li><a href="https://www.consumer.ftc.gov/articles/protect-your-personal-information-and-data">Protecting your personal information</a></li>
 <li><a href="https://www.fbi.gov/scams-and-safety/on-the-internet">Protecting your devices</a></li>
+<li><a href="https://www.cisa.gov/free-cybersecurity-services-and-tools">Free Cybersecurity Tools and Services</a></li>
 </ul>'
 ;
 /**
