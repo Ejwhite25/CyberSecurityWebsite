@@ -39,7 +39,7 @@ table {
 <td>CS 190</td>
 <td>Computer Science I</td>
 <td>3</td>
-<td><a href="https://western.edu/people/marc-rubin-phd/">Marc Rubin</a></td>
+<td>Marc Rubin</td>
 </tr>
 <tr>
 <td>CS 191</td>
@@ -55,7 +55,7 @@ table {
 <td>CS 250</td>
 <td>Web Application Development I</td>
 <td>3</td>
-<td><a href="https://western.edu/people/marc-rubin-phd/">Marc Rubin</a></td>
+<td>Marc Rubin</td>
 </tr>
 <tr>
 <td>CS 280</td>
@@ -67,19 +67,19 @@ table {
 <td>CS 330</td>
 <td>Operating systems and architecture</td>
 <td>3</td>
-<td><a href="https://western.edu/people/doug-macgregor-phd/">Doug Macgregor</a></td>
+<td>Doug Macgregor</td>
 </tr>
 <tr>
 <td>CS 370</td>
 <td>Systems Programming in C</td>
 <td>3</td>
-<td><a href="https://western.edu/people/marc-rubin-phd/">Marc Rubin</a></td>
+<td>Marc Rubin</td>
 </tr>
 <tr>
 <td>CS 412</td>
 <td>Software Engineering</td>
 <td>3</td>
-<td><a href="https://western.edu/people/marc-rubin-phd/">Marc Rubin</a></td>
+<td>Marc Rubin</td>
 </tr>
 <tr>
 <td>CS 470</td>
@@ -91,7 +91,7 @@ table {
 <td>CS 495</td>
 <td>Senior Project</td>
 <td>3</td>
-<td><a href="https://western.edu/people/marc-rubin-phd/">Marc Rubin</a></td>
+<td>Marc Rubin</td>
 </tr>
 <tr>
 <td><h2>Total Credits</h2></td>
@@ -102,7 +102,7 @@ table {
 <td>CS 170</td>
 <td>Information Security and Hacking</td>
 <td>3</td>	
-<td><a href="https://western.edu/people/doug-macgregor-phd/">Doug Macgregor</a></td>
+<td>Doug Macgregor</td>
 </tr>
 <tr>
 <td>CS 235</td>	
@@ -113,19 +113,19 @@ table {
 <td>CS 360</td>
 <td>System Security</td>
 <td>3</td>
-<td><a href="https://western.edu/people/doug-macgregor-phd/">Doug Macgregor</a></td>
+<td>Doug Macgregor</td>
 </tr>
 <tr>
 <td>CS 450</td>	
 <td>Ethical Hacking and Malware</td>
 <td>3</td>
-<td><a href="https://western.edu/people/doug-macgregor-phd/">Doug Macgregor</a></td>
+<td>Doug Macgregor</td>
 </tr>
 <tr>
 <td>CS 460</td>	
 <td>Network Security</td>	
 <td>3</td>
-<td><a href="https://western.edu/people/doug-macgregor-phd/">Doug Macgregor</a></td>
+<td>Doug Macgregor</td>
 </tr>
 <tr>
 <td>MAT 140</td>
@@ -297,6 +297,23 @@ or Calculus I (GT-MA1)
 <td style="font-weight:bold">Credits</td>
 <td>16</td>
 </tr>
+<tr>
+<td style="font-weight:bold">Fall</td>
+<td>       </td>
+</tr>
+<tr>
+<td style=font-weightL"bold">Choose 1 Pair based on the year of program start</td>
+</tr>
+<tr>
+<td>Pair 1</td>
+<td>CS 250 AND upper division CS Elective</td>
+<td>    </td>
+</tr>
+<tr>
+<td>Pair 2</td>
+<td>CS 330 AND CS 235</td>
+</tr>
+
 </tbody>
 </table>
 <h1>Contact Us</h1>
