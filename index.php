@@ -25,7 +25,7 @@ table {
       <heading class="bordered border-light">
 	<h2 class="small expanded">Program Requirements</h2>
 </heading>
-<table>
+<table class="Program-requirements">
 <thead>
 <tr>
 <th>Code</th>
@@ -145,7 +145,9 @@ table {
 <h1>Contact Us</h1>
 <p>Contact either Marc or Doug for any questions or speaking opportunities!</p>
 <a href="ContactForm.html">Contact Form</a>
-
+<h1>Career Info</h1>
+<p>For more information on careers in cybersecurity provided by burning glass technologies, check out the link below!</p>
+<p><a href="CareerInfo.html">Career Information</a></p>
 <h1>Informational resources</h1>
 <p>For more information on how to stay safe online and protect yourself, check out these resources!</p>
 <ul>
