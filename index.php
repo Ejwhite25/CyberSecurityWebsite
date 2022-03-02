@@ -1,6 +1,8 @@
 <?php
-echo '<h1>Overview</h1>
-<p>The Information Security emphasis (also referred to as “Cybersecurity”) 
+echo '<main>
+<h1>Information Security</h1>
+<h2>Overview</h2>
+<p>The Information Security emphasis (also referred to as “Cyber-security”) 
 will introduce you to principles and concepts of information security and hacking. 
 Coursework uses real-world examples to illustrate attacks on computer systems and networks and teaches you basic hacking concepts with defensive measures. As a computer scientist, you’ll also need to be more than technically proficient. Reading, writing, critical analysis and presentation skills are essential for those who wish to do more than develop software. 
 The dynamic blend of Western’s liberal arts and computer science courses will provide you with the hard and soft skills necessary to manage people and projects.
@@ -12,13 +14,28 @@ Due to the increasing demand for this skillset, you’ll enter the workforce pre
 table {
   border-spacing: 30px;
 }
+h1{
+	font-family: Lato;
+	font-size:95px;
+	line-height:90px;
+}
+h2{
+    font-family: Lato;
+    font-size: 46px;
+    line-height: 52px;
+}
+p{
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 30px;
+}
 </style>
-<h1>Professors</h1>
+<h2>Professors</h2>
 <ul>
 <li><a href="https://western.edu/people/doug-macgregor-phd/">Doug Macgregor</a></li>
 <li><a href="https://western.edu/people/marc-rubin-phd/">Marc Rubin</a></li>
 </ul>
-<h1> Program Certifications</h1>
+<h2> Program Certifications</h2>
 <p>NSA CAE-CD Certified</p>
  <img src = "https://cyber.tstc.edu/wp-content/uploads/2018/09/Seals-1.jpg"
       alt = "CAE-CD Certification" height = "250" width = "300" />
@@ -139,22 +156,23 @@ table {
 </tbody>
 </tr>
 </table>
-<h1>Degree Plan</h1>
+<h2>Degree Plan</h2>
 <p>Check out our degree plan to find more information on what each year in our program will look like!</p>
 <p><a href="DegreePlan.html">Degree Plan</a></p>
-<h1>Contact Us</h1>
+<h2>Contact Us</h2>
 <p>Contact either Marc or Doug for any questions or speaking opportunities!</p>
 <a href="ContactForm.html">Contact Form</a>
-<h1>Career Info</h1>
-<p>For more information on careers in cybersecurity provided by burning glass technologies, check out the link below!</p>
+<h2>Career Info</h2>
+<p>For more information on careers in cyber-security provided by burning glass technologies, check out the link below!</p>
 <p><a href="CareerInfo.html">Career Information</a></p>
-<h1>Informational resources</h1>
+<h2>Informational resources</h2>
 <p>For more information on how to stay safe online and protect yourself, check out these resources!</p>
 <ul>
 <li><a href="https://www.consumer.ftc.gov/articles/protect-your-personal-information-and-data">Protecting your personal information</a></li>
 <li><a href="https://www.fbi.gov/scams-and-safety/on-the-internet">Protecting your devices</a></li>
-<li><a href="https://www.cisa.gov/free-cybersecurity-services-and-tools">Free Cybersecurity Tools and Services</a></li>
-</ul>'
+<li><a href="https://www.cisa.gov/free-cybersecurity-services-and-tools">Free cyber-security Tools and Services</a></li>
+</ul>
+</main>'
 ;
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads
