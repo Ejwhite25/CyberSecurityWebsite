@@ -30,7 +30,7 @@ p{
     line-height: 30px;
 }
 </style>
-<h2>CS Faculty</h2>
+<h2>Faculty</h2>
 <ul>
 <li><a href="https://western.edu/people/doug-macgregor-phd/">Doug Macgregor</a></li>
 <li><a href="https://western.edu/people/marc-rubin-phd/">Marc Rubin</a></li>
