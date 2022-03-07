@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Information</title>
+    <script>
+        function getParams() {
+            var index = document.URL.indexOf('?');
+            var params = [];
+            if (index !== -1) {
+                var pairs = document.URL.substring(index+1, document.URL.length).split('&');
+                for (var i=0; i<pairs.length; i++) {
+                    nameVal = pairs[i].split('=');
+                    params[nameVal[0]] = nameVal[1];
+                }
+
+            }
+            return params
+
+        }
+        function popInfo(params) {
+            title = params['course']
+            if (title === "SE"){
+                document.getElementById("Title").innerHTML = "Software Engineering"
+                document.getElementById("info").innerHTML = "An introduction to the fundamental principles of software engineering. Formal software development techniques and high-level software tools are emphasized. Topics include object-oriented design and programming, software testing, quality and formal methods for software design. Prerequisite: CS 280 with a minimum grade of C-."
+            } else if (title === "SPC") {
+                document.getElementById("Title").innerHTML = "Systems Programming in C";
+                document.getElementById("info").innerHTML = "A study of C programming in a UNIX environment. Topics include the C language, the system call interface for file I/O, process management, interprocess communication and threads, command line utilities for file system navigation, file editing, compiling, execution and scripting. Prerequisite: CS 280 with a minimum grade of C-."
+
+            } else if(title === "OSA"){
+                document.getElementById("Title").innerHTML = "Operating Systems and Architecture";
+                document.getElementById("info").innerHTM = "A study of how hardware and operating systems work in a multiprocessing computer system. The Intel architecture including the instruction set, memory hierarchy, and exception handling are covered. The Windows and Linux operating systems functions and programming interfaces are studied to understand modern computing environments. Prerequisite: CS 191";
+
+            } else if(title === "CA"){
+                document.getElementById("Title").innerHTML = "College Algebra";
+                document.getElementById("info").innerHTML = ""
+            } else if(title === "ISH"){
+                document.getElementById("Title").innerHTML = "Information Security & Hacking";
+                document.getElementById("info").innerHTML = "";
+            } else if(title === "EHM"){
+                document.getElementById("Title").innerHTML = "Ethical Hacking & Malware";
+                document.getElementById("info").innerHTML = "";
+            } else if(title === "NS"){
+                document.getElementById("Title").innerHTML = "Network Security";
+                document.getElementById("info").innerHTML = "";
+            } else if(title === "CSII"){
+                document.getElementById("Title").innerHTML = "Computer Science II";
+                document.getElementById("info").innerHTML = "";
+            } else if(title === "CSI"){
+                document.getElementById("Title").innerHTML = "Computer Science I";
+                document.getElementById("info").innerHTML = "";
+            } else if(title === "DS"){
+                document.getElementById("Title").innerHTML = "Data Structures";
+                document.getElementById("info").innerHTML = "";
+            } else if(title === "SS"){
+                document.getElementById("Title").innerHTML = "Systems Security";
+                document.getElementById("info").innerHTML = "";
+            } else if(title === "SP"){
+                document.getElementById("Title").innerHTML = "Capstone (Senior Project)";
+                document.getElementById("info").innerHTML = "";
+            } else if(title === "WDI"){
+                document.getElementById("Title").innerHTML = "Web Development I";
+                document.getElementById("info").innerHTML = "";
+            } else if(title === "AG"){
+                document.getElementById("Title").innerHTML = "Algorithims";
+                document.getElementById("info").innerHTML = "";
+            } else if(title === "CN"){
+                document.getElementById("Title").innerHTML = "Computer Networks";
+                document.getElementById("info").innerHTML = "";
+            } else if(title === "DBMS"){
+                document.getElementById("Title").innerHTML = "Database Management Systems";
+                document.getElementById("info").innerHTML = "";
+            }
+        }
+    </script>
+</head>
+<body onload="popInfo(getParams())">
+<h1 id="Title"></h1>
+<p id="info"></p>
+</body>
+</html>

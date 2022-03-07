@@ -1,5 +1,10 @@
 <?php
 echo '<main>
+<script type="text/javascript">
+function getCourseDescription(course){
+    
+}
+</script>
 <h1>Information Security</h1>
 <h2>Overview</h2>
 <p>The Information Security emphasis (also referred to as “Cyber-security”) 
@@ -58,59 +63,59 @@ p{
 <tbody>
 <tr>
 <td>CS 190</td>
-<td>Computer Science I</td>
+<td><a href="CourseInfo.html?course=CSI&">Computer Science I</a></td>
 <td>3</td>
 <td>Marc Rubin</td>
 </tr>
 <tr>
 <td>CS 191</td>
-<td>Computer Science II</td>
+<td><a href="CourseInfo.html?course=CSII">Computer Science II</td>
 <td>3</td>
 </tr>
 <tr>
 <td>CS 195</td>
-<td>Database Management System</td>
+<td><a href="CourseInfo.html?course=DBMS&">Database Management System</a></td>
 <td>3</td>
 </tr>
 <tr>
 <td>CS 250</td>
-<td>Web Application Development I</td>
+<td><a href="CourseInfo.html?course=WDI&">Web Application Development I</a></td>
 <td>3</td>
 <td>Marc Rubin</td>
 </tr>
 <tr>
 <td>CS 280</td>
-<td>Data Structures</td>
+<td><a href="CourseInfo.html?course=DS&">Data Structures</a></td>
 <td>3</td>
 <td>Sam Micka</td>
 </tr>
 <tr>
 <td>CS 330</td>
-<td>Operating systems and architecture</td>
+<td><a href="CourseInfo.html?course=OSA&">Operating systems and architecture</a></td>
 <td>3</td>
 <td>Doug Macgregor</td>
 </tr>
 <tr>
 <td>CS 370</td>
-<td>Systems Programming in C</td>
+<td><a href="CourseInfo.html?course=SPC&">Systems Programming in C</a></td>
 <td>3</td>
 <td>Marc Rubin</td>
 </tr>
 <tr>
 <td>CS 412</td>
-<td>Software Engineering</td>
+<td><a href="CourseInfo.html?course=SE&">Software Engineering</a></td>
 <td>3</td>
 <td>Marc Rubin</td>
 </tr>
 <tr>
 <td>CS 470</td>
-<td>Algorithms</td>
+<td><a href="CourseInfo.html?course=AG&">Algorithms</a></td>
 <td>3</td>
 <td>Sam Micka</td>
 </tr>
 <tr>
 <td>CS 495</td>
-<td>Senior Project</td>
+<td><a href="CourseInfo.html?course=SP&">Senior Project</a></td>
 <td>3</td>
 <td>Marc Rubin</td>
 </tr>
@@ -124,36 +129,36 @@ p{
 </tr>
 <tr>
 <td>CS 170</td>
-<td>Information Security and Hacking</td>
+<td><a href="CourseInfo.html?course=ISH&">Information Security and Hacking</a></td>
 <td>3</td>	
 <td>Doug Macgregor</td>
 </tr>
 <tr>
 <td>CS 235</td>	
-<td>Computers Networks</td>	
+<td><a href="CourseInfo.html?course=CN&">Computers Networks</a></td>	
 <td>3</td>
 </tr>
 <tr>
 <td>CS 360</td>
-<td>System Security</td>
+<td><a href="CourseInfo.html?course=SS&">System Security</a></td>
 <td>3</td>
 <td>Doug Macgregor</td>
 </tr>
 <tr>
 <td>CS 450</td>	
-<td>Ethical Hacking and Malware</td>
+<td><a href="CourseInfo.html?course=EHM&">Ethical Hacking and Malware</a></td>
 <td>3</td>
 <td>Doug Macgregor</td>
 </tr>
 <tr>
 <td>CS 460</td>	
-<td>Network Security</td>	
+<td><a href="CourseInfo.html?course=NS&">Network Security</a></td>	
 <td>3</td>
 <td>Doug Macgregor</td>
 </tr>
 <tr>
 <td>MAT 140</td>
-<td>College Algebra</td>
+<td><a href="CourseInfo.html?course=CA&">College Algebra</a></td>
 <td>3</td>
 </tr>
 <tr>
