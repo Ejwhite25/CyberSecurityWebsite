@@ -30,20 +30,24 @@ p{
     line-height: 30px;
 }
 </style>
-<h2>Professors</h2>
+<h2>Faculty</h2>
 <ul>
 <li><a href="https://western.edu/people/doug-macgregor-phd/">Doug Macgregor</a></li>
 <li><a href="https://western.edu/people/marc-rubin-phd/">Marc Rubin</a></li>
+<li><a href="https://western.edu/people/samuel-micka/">Sam Micka</a></li>
 </ul>
-<h2> Program Certifications</h2>
+<!---<h2> Program Certifications</h2>
 <p>NSA CAE-CD Certified</p>
  <img src = "https://cyber.tstc.edu/wp-content/uploads/2018/09/Seals-1.jpg"
       alt = "CAE-CD Certification" height = "250" width = "300" />
       <heading class="bordered border-light">
 	<h2 class="small expanded">Program Requirements</h2>
-</heading>
+</heading>--->
 <table class="Program-requirements">
 <thead>
+<tr>
+<td><h3>CS core:</h3></td>
+</tr>
 <tr>
 <th>Code</th>
 <th>Class Name</th>
@@ -114,6 +118,9 @@ p{
 <td><h2>Total Credits</h2></td>
 <td>                      </td>
 <td><h2>30</h2></td>
+</tr>
+<tr>
+<td><h3>Information Security Emphasis:</h3></td>
 </tr>
 <tr>
 <td>CS 170</td>

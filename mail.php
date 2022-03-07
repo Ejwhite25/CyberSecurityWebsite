@@ -24,4 +24,4 @@ if (empty($message)) {
 $subject = $_POST['Subject'];
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error");
-echo "Thank You!";
+echo "Thank You for reaching out!";
