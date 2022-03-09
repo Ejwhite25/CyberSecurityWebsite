@@ -1,6 +1,768 @@
-<main>
+<head>
+    <meta charset="UTF-8">
+    <title>Degree Plan</title>
+    <link rel="stylesheet" id="main-css-css" href="https://western.edu/wp-content/themes/wcu/dist/css/style.css"
+          media="all">
+</head>
+
+<body>
+<header id="header" class="fixed-top sticky-off-screen">
+    <!-- Header goes here -->
+    <nav id="top-nav" class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Top Menu">
+        <div class="container-xl">
+            <div class="dropdown d-lg-none">
+                <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false" aria-label="Resources For">
+                    Resources For
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <ul id="menu-pre-header" class="list-unstyled">
+                        <li id="menu-item-41"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a title=" "
+                                                                                                             href="https://western.edu/current-students/">Current
+                            Students</a></li>
+                        <li id="menu-item-6011"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6011"><a
+                                href="https://western.edu/alumni/">Alumni</a></li>
+                        <li id="menu-item-39"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a
+                                href="https://western.edu/parents-family/">Parents &amp; Family</a></li>
+                        <li id="menu-item-9300"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9300"><a
+                                href="https://western.edu/athletics/">Athletics</a></li>
+                        <li id="menu-item-7390"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7390"><a
+                                href="https://western.edu/covid-19-updates/">COVID-19 Updates</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul id="top-menu" class="navbar-nav flex-row justify-content-around">
+                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41 nav-item"><a title=" "
+                                                                                                              href="https://western.edu/current-students/"
+                                                                                                              class="nav-link">Current
+                    Students</a></li>
+                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6011 nav-item"><a
+                        href="https://western.edu/alumni/" class="nav-link">Alumni</a></li>
+                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39 nav-item"><a
+                        href="https://western.edu/parents-family/" class="nav-link">Parents &amp; Family</a></li>
+                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9300 nav-item"><a
+                        href="https://western.edu/athletics/" class="nav-link">Athletics</a></li>
+                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7390 nav-item"><a
+                        href="https://western.edu/covid-19-updates/" class="nav-link">COVID-19 Updates</a></li>
+            </ul>
+            <div id="search-container-desktop">
+                <form id="search-form" role="search" method="get" class="form-inline" action="https://western.edu/">
+                    <label class="sr-only" for="search">Search Western</label>
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search Western" value="" name="s"
+                               title="Search" aria-label="Search" aria-describedby="search-btn" id="search">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary p-4" type="submit" id="search-btn"><span
+                                    class="sr-only">Search</span><span class="fal fa-search"></span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <ul id="menu-apply-visit" class="navbar-nav flex-row justify-content-between">
+                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7389"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7389 nav-item"><a
+                        href="https://western.edu/admissions-aid/apply/" class="nav-link">Apply</a></li>
+                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5698"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5698 nav-item"><a
+                        href="https://western.edu/admissions-aid/visit-western/" class="nav-link">Visit</a></li>
+                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11316"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11316 nav-item"><a
+                        href="https://western.edu/alumni/foundation/" class="nav-link">Give</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="main-nav" class="navbar navbar-expand-md navbar-light bg-white" aria-label="Main Menu">
+        <div class="container-xl position-relative">
+            <a class="navbar-brand" href="https://western.edu/"><img
+                    src="https://western.edu/wp-content/uploads/2020/05/WCU_Main-new-1.svg"
+                    alt="Western Colorado University" title="Western Colorado University"></a>
+            <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar top-bar"></span>
+                <span class="navbar-toggler-bar middle-bar"></span>
+                <span class="navbar-toggler-bar bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div id="search-container-mobile"></div>
+                <ul id="main-menu" class="navbar-nav">
+                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-77"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-77 nav-item">
+                        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                           aria-label="About Western" class="dropdown-toggle nav-link" id="menu-item-dropdown-77">About
+                            Western</a>
+                        <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-77" role="menu">
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-42"
+                                class="menu-item-callout menu-item menu-item-type-post_type menu-item-object-page nav-item menu-item-42">
+                                <p class="h5">Learn about Western and our community.</p><a
+                                    href="https://western.edu/about/" class="btn btn-primary mt-3">About Western</a>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7356"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7356 nav-item">
+                                <a href="https://western.edu/about/administration/" class="dropdown-item small pr-0">Administration</a>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-69"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69 nav-item">
+                                <a href="https://western.edu/about/leadership/" class="dropdown-item small pr-0">Leadership</a>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7355"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7355 nav-item">
+                                <a href="https://western.edu/about/mission-campus-profile/"
+                                   class="dropdown-item small pr-0">Mission &amp; Campus Profile</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-73"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73 nav-item">
+                                <a href="https://western.edu/about/map-directions/" class="dropdown-item small pr-0">Map
+                                    &amp; Directions</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-66"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+                                <a href="https://western.edu/about/directory/" class="dropdown-item small pr-0">Directory</a>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7357"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7357 nav-item">
+                                <a href="https://western.edu/about/diversity-equity-inclusivity/"
+                                   class="dropdown-item small pr-0">Diversity, Equity &amp; Inclusivity</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-18748"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18748 nav-item">
+                                <a href="https://western.edu/about/vision-values/" class="dropdown-item small pr-0">Vision
+                                    &amp; Values</a></li>
+                        </ul>
+                    </li>
+                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-76"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-76 nav-item">
+                        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                           aria-label="Academics" class="dropdown-toggle nav-link"
+                           id="menu-item-dropdown-76">Academics</a>
+                        <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-76" role="menu">
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-44"
+                                class="menu-item-callout menu-item menu-item-type-post_type menu-item-object-page nav-item menu-item-44">
+                                <p class="h5">Explore Western's immersive academic programs.</p><a
+                                    href="https://western.edu/academics/" class="btn btn-primary mt-3">Academics</a>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-80"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80 nav-item">
+                                <a href="https://western.edu/academics/undergraduate-programs/"
+                                   class="dropdown-item small pr-0">Undergraduate Programs</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-1668"
+                                class="menu-item menu-item-type-post_type menu-item-object-school menu-item-1668 nav-item">
+                                <a href="https://western.edu/school/school-of-graduate-studies/"
+                                   class="dropdown-item small pr-0">School of Graduate Studies</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-1666"
+                                class="menu-item menu-item-type-post_type menu-item-object-school menu-item-1666 nav-item">
+                                <a href="https://western.edu/school/accelerated-degree-programs-32/"
+                                   class="dropdown-item small pr-0">Accelerated Degree Programs (3+2)</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-1669"
+                                class="menu-item menu-item-type-post_type menu-item-object-school menu-item-1669 nav-item">
+                                <a href="https://western.edu/school/paul-m-rady-school-of-computer-science-engineering/"
+                                   class="dropdown-item small pr-0">Paul&nbsp;M.&nbsp;Rady School of Computer Science
+                                    &amp; Engineering</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-1667"
+                                class="menu-item menu-item-type-post_type menu-item-object-school menu-item-1667 nav-item">
+                                <a href="https://western.edu/school/school-of-business/"
+                                   class="dropdown-item small pr-0">School of Business</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-1665"
+                                class="menu-item menu-item-type-post_type menu-item-object-school menu-item-1665 nav-item">
+                                <a href="https://western.edu/school/school-environment-sustainability/"
+                                   class="dropdown-item small pr-0">Clark Family School of Environment and
+                                    Sustainability</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-14204"
+                                class="menu-item menu-item-type-post_type menu-item-object-school menu-item-14204 nav-item">
+                                <a href="https://western.edu/school/adult-degree-completion/"
+                                   class="dropdown-item small pr-0">Adult Degree Completion</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-995"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-995 nav-item">
+                                <a href="https://western.edu/academics/extended-studies/"
+                                   class="dropdown-item small pr-0">Extended Studies</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-3151"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3151 nav-item">
+                                <a href="https://western.edu/academics/departments/" class="dropdown-item small pr-0">Academic
+                                    Departments</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-3150"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3150 nav-item">
+                                <a href="https://western.edu/academics/academic-calendar/"
+                                   class="dropdown-item small pr-0">Academic Calendar</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-1402"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1402 nav-item">
+                                <a href="https://western.edu/academics/academic-resource-center/"
+                                   class="dropdown-item small pr-0">Academic Resource Center</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-1004"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1004 nav-item">
+                                <a href="https://western.edu/academics/catalog/" class="dropdown-item small pr-0">University
+                                    Catalog</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-996"
+                                class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-996 nav-item">
+                                <a href="https://western.edu/news-research/" class="dropdown-item small pr-0">News &amp;
+                                    Research</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-3152"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3152 nav-item">
+                                <a href="https://library.western.edu/lib" class="dropdown-item small pr-0">Library</a>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-11617"
+                                class="menu-item menu-item-type-post_type menu-item-object-program menu-item-11617 nav-item">
+                                <a href="https://western.edu/program/honors-program/" class="dropdown-item small pr-0">Honors
+                                    Program</a></li>
+                        </ul>
+                    </li>
+                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-75"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-75 nav-item">
+                        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                           aria-label="Admissions &amp; Aid" class="dropdown-toggle nav-link"
+                           id="menu-item-dropdown-75">Admissions &amp; Aid</a>
+                        <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-75" role="menu">
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-46"
+                                class="menu-item-callout menu-item menu-item-type-post_type menu-item-object-page nav-item menu-item-46">
+                                <p class="h5">Learn about financial aid and applying to Western.</p><a
+                                    href="https://western.edu/admissions-aid/" class="btn btn-primary mt-3">Admissions
+                                &amp; Aid</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-86"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86 nav-item">
+                                <a href="https://western.edu/admissions-aid/financial-aid/"
+                                   class="dropdown-item small pr-0">Financial Aid</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7358"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7358 nav-item">
+                                <a href="https://western.edu/admissions-aid/admissions/"
+                                   class="dropdown-item small pr-0">Admissions</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7359"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7359 nav-item">
+                                <a href="https://western.edu/admissions-aid/tuition-costs/"
+                                   class="dropdown-item small pr-0">Tuition &amp; Costs</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7360"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7360 nav-item">
+                                <a href="https://western.edu/admissions-aid/visit-western/"
+                                   class="dropdown-item small pr-0">Visit Western</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7361"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7361 nav-item">
+                                <a href="https://western.edu/admissions-aid/apply/" class="dropdown-item small pr-0">Apply</a>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-11506"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11506 nav-item">
+                                <a href="https://western.edu/admissions-aid/admissions/admitted-students/"
+                                   class="dropdown-item small pr-0">Admitted Students</a></li>
+                        </ul>
+                    </li>
+                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-74"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-74 nav-item">
+                        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                           aria-label="Student Life" class="dropdown-toggle nav-link" id="menu-item-dropdown-74">Student
+                            Life</a>
+                        <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-74" role="menu">
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-48"
+                                class="menu-item-callout menu-item menu-item-type-post_type menu-item-object-page nav-item menu-item-48">
+                                <p class="h5">See how Western students live and learn.</p><a
+                                    href="https://western.edu/student-life/" class="btn btn-primary mt-3">Student
+                                Life</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7362"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7362 nav-item">
+                                <a href="https://western.edu/student-life/residence-life-housing/"
+                                   class="dropdown-item small pr-0">Residence Life &amp; Housing</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7366"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7366 nav-item">
+                                <a href="https://western.edu/student-life/student-affairs/"
+                                   class="dropdown-item small pr-0">Student Affairs</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-12597"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12597 nav-item">
+                                <a href="https://western.edu/clubs-orgs/" class="dropdown-item small pr-0">Clubs and
+                                    Organizations</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7363"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7363 nav-item">
+                                <a href="https://western.edu/student-life/campus-recreation/"
+                                   class="dropdown-item small pr-0">Campus Recreation</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7364"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7364 nav-item">
+                                <a href="https://western.edu/student-life/health-wellness/"
+                                   class="dropdown-item small pr-0">Health &amp; Wellness</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7365"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7365 nav-item">
+                                <a href="https://western.edu/student-life/safety-security/"
+                                   class="dropdown-item small pr-0">Safety &amp; Security</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7368"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7368 nav-item">
+                                <a href="https://western.edu/student-life/multicultural-center/"
+                                   class="dropdown-item small pr-0">Multicultural Center</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7367"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7367 nav-item">
+                                <a href="https://western.edu/student-life/lead/" class="dropdown-item small pr-0">LEAD:
+                                    Leadership, Engagement and Development</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7369"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7369 nav-item">
+                                <a href="https://western.edu/student-life/epic-mentorship-program/"
+                                   class="dropdown-item small pr-0">EPIC Mentorship Program</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-11670"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11670 nav-item">
+                                <a href="https://western.edu/student-life/career-services/"
+                                   class="dropdown-item small pr-0">Career Services</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-16872"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16872 nav-item">
+                                <a href="https://western.edu/student-life/title-ix/" class="dropdown-item small pr-0">Title
+                                    IX and Community Standards</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="main-nav-extras d-md-none">
+                    <div class="mt-3 mb-4">
+                        <ul id="menu-apply-visit-1" class="navbar-nav flex-row justify-content-between">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7389"><a
+                                    href="https://western.edu/admissions-aid/apply/">Apply</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5698"><a
+                                    href="https://western.edu/admissions-aid/visit-western/">Visit</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11316"><a
+                                    href="https://western.edu/alumni/foundation/">Give</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-menu-extra" id="nav_menu-6"><h2
+                            class="h4 footer__menu-header small text-uppercase text-primary" tabindex="0">Resources
+                        For</h2>
+                        <div class="menu-pre-header-container">
+                            <ul id="menu-pre-header-1" class="menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a
+                                        title=" " href="https://western.edu/current-students/">Current Students</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6011"><a
+                                        href="https://western.edu/alumni/">Alumni</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a
+                                        href="https://western.edu/parents-family/">Parents &amp; Family</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9300"><a
+                                        href="https://western.edu/athletics/">Athletics</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7390"><a
+                                        href="https://western.edu/covid-19-updates/">COVID-19 Updates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<header id="header2" class="fixed-top sticky-off-screen">
+    <!-- Header goes here -->
+    <nav id="top-nav" class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Top Menu">
+        <div class="container-xl">
+            <div class="dropdown d-lg-none">
+                <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false" aria-label="Resources For">
+                    Resources For
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <ul id="menu-pre-header" class="list-unstyled">
+                        <li id="menu-item-41"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a title=" "
+                                                                                                             href="https://western.edu/current-students/">Current
+                            Students</a></li>
+                        <li id="menu-item-6011"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6011"><a
+                                href="https://western.edu/alumni/">Alumni</a></li>
+                        <li id="menu-item-39"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a
+                                href="https://western.edu/parents-family/">Parents &amp; Family</a></li>
+                        <li id="menu-item-9300"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9300"><a
+                                href="https://western.edu/athletics/">Athletics</a></li>
+                        <li id="menu-item-7390"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7390"><a
+                                href="https://western.edu/covid-19-updates/">COVID-19 Updates</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul id="top-menu" class="navbar-nav flex-row justify-content-around">
+                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41 nav-item"><a title=" "
+                                                                                                              href="https://western.edu/current-students/"
+                                                                                                              class="nav-link">Current
+                    Students</a></li>
+                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6011 nav-item"><a
+                        href="https://western.edu/alumni/" class="nav-link">Alumni</a></li>
+                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39 nav-item"><a
+                        href="https://western.edu/parents-family/" class="nav-link">Parents &amp; Family</a></li>
+                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9300 nav-item"><a
+                        href="https://western.edu/athletics/" class="nav-link">Athletics</a></li>
+                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7390 nav-item"><a
+                        href="https://western.edu/covid-19-updates/" class="nav-link">COVID-19 Updates</a></li>
+            </ul>
+            <div id="search-container-desktop">
+                <form id="search-form" role="search" method="get" class="form-inline" action="https://western.edu/">
+                    <label class="sr-only" for="search">Search Western</label>
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search Western" value="" name="s"
+                               title="Search" aria-label="Search" aria-describedby="search-btn" id="search">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary p-4" type="submit" id="search-btn"><span
+                                    class="sr-only">Search</span><span class="fal fa-search"></span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <ul id="menu-apply-visit" class="navbar-nav flex-row justify-content-between">
+                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7389"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7389 nav-item"><a
+                        href="https://western.edu/admissions-aid/apply/" class="nav-link">Apply</a></li>
+                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5698"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5698 nav-item"><a
+                        href="https://western.edu/admissions-aid/visit-western/" class="nav-link">Visit</a></li>
+                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11316"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11316 nav-item"><a
+                        href="https://western.edu/alumni/foundation/" class="nav-link">Give</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="main-nav" class="navbar navbar-expand-md navbar-light bg-white" aria-label="Main Menu">
+        <div class="container-xl position-relative">
+            <a class="navbar-brand" href="https://western.edu/"><img
+                    src="https://western.edu/wp-content/uploads/2020/05/WCU_Main-new-1.svg"
+                    alt="Western Colorado University" title="Western Colorado University"></a>
+            <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar top-bar"></span>
+                <span class="navbar-toggler-bar middle-bar"></span>
+                <span class="navbar-toggler-bar bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div id="search-container-mobile"></div>
+                <ul id="main-menu" class="navbar-nav">
+                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-77"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-77 nav-item">
+                        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                           aria-label="About Western" class="dropdown-toggle nav-link" id="menu-item-dropdown-77">About
+                            Western</a>
+                        <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-77" role="menu">
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-42"
+                                class="menu-item-callout menu-item menu-item-type-post_type menu-item-object-page nav-item menu-item-42">
+                                <p class="h5">Learn about Western and our community.</p><a
+                                    href="https://western.edu/about/" class="btn btn-primary mt-3">About Western</a>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7356"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7356 nav-item">
+                                <a href="https://western.edu/about/administration/" class="dropdown-item small pr-0">Administration</a>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-69"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69 nav-item">
+                                <a href="https://western.edu/about/leadership/" class="dropdown-item small pr-0">Leadership</a>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7355"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7355 nav-item">
+                                <a href="https://western.edu/about/mission-campus-profile/"
+                                   class="dropdown-item small pr-0">Mission &amp; Campus Profile</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-73"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73 nav-item">
+                                <a href="https://western.edu/about/map-directions/" class="dropdown-item small pr-0">Map
+                                    &amp; Directions</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-66"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+                                <a href="https://western.edu/about/directory/" class="dropdown-item small pr-0">Directory</a>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7357"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7357 nav-item">
+                                <a href="https://western.edu/about/diversity-equity-inclusivity/"
+                                   class="dropdown-item small pr-0">Diversity, Equity &amp; Inclusivity</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-18748"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18748 nav-item">
+                                <a href="https://western.edu/about/vision-values/" class="dropdown-item small pr-0">Vision
+                                    &amp; Values</a></li>
+                        </ul>
+                    </li>
+                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-76"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-76 nav-item">
+                        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                           aria-label="Academics" class="dropdown-toggle nav-link"
+                           id="menu-item-dropdown-76">Academics</a>
+                        <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-76" role="menu">
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-44"
+                                class="menu-item-callout menu-item menu-item-type-post_type menu-item-object-page nav-item menu-item-44">
+                                <p class="h5">Explore Western's immersive academic programs.</p><a
+                                    href="https://western.edu/academics/" class="btn btn-primary mt-3">Academics</a>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-80"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80 nav-item">
+                                <a href="https://western.edu/academics/undergraduate-programs/"
+                                   class="dropdown-item small pr-0">Undergraduate Programs</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-1668"
+                                class="menu-item menu-item-type-post_type menu-item-object-school menu-item-1668 nav-item">
+                                <a href="https://western.edu/school/school-of-graduate-studies/"
+                                   class="dropdown-item small pr-0">School of Graduate Studies</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-1666"
+                                class="menu-item menu-item-type-post_type menu-item-object-school menu-item-1666 nav-item">
+                                <a href="https://western.edu/school/accelerated-degree-programs-32/"
+                                   class="dropdown-item small pr-0">Accelerated Degree Programs (3+2)</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-1669"
+                                class="menu-item menu-item-type-post_type menu-item-object-school menu-item-1669 nav-item">
+                                <a href="https://western.edu/school/paul-m-rady-school-of-computer-science-engineering/"
+                                   class="dropdown-item small pr-0">Paul&nbsp;M.&nbsp;Rady School of Computer Science
+                                    &amp; Engineering</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-1667"
+                                class="menu-item menu-item-type-post_type menu-item-object-school menu-item-1667 nav-item">
+                                <a href="https://western.edu/school/school-of-business/"
+                                   class="dropdown-item small pr-0">School of Business</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-1665"
+                                class="menu-item menu-item-type-post_type menu-item-object-school menu-item-1665 nav-item">
+                                <a href="https://western.edu/school/school-environment-sustainability/"
+                                   class="dropdown-item small pr-0">Clark Family School of Environment and
+                                    Sustainability</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-14204"
+                                class="menu-item menu-item-type-post_type menu-item-object-school menu-item-14204 nav-item">
+                                <a href="https://western.edu/school/adult-degree-completion/"
+                                   class="dropdown-item small pr-0">Adult Degree Completion</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-995"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-995 nav-item">
+                                <a href="https://western.edu/academics/extended-studies/"
+                                   class="dropdown-item small pr-0">Extended Studies</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-3151"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3151 nav-item">
+                                <a href="https://western.edu/academics/departments/" class="dropdown-item small pr-0">Academic
+                                    Departments</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-3150"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3150 nav-item">
+                                <a href="https://western.edu/academics/academic-calendar/"
+                                   class="dropdown-item small pr-0">Academic Calendar</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-1402"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1402 nav-item">
+                                <a href="https://western.edu/academics/academic-resource-center/"
+                                   class="dropdown-item small pr-0">Academic Resource Center</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-1004"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1004 nav-item">
+                                <a href="https://western.edu/academics/catalog/" class="dropdown-item small pr-0">University
+                                    Catalog</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-996"
+                                class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-996 nav-item">
+                                <a href="https://western.edu/news-research/" class="dropdown-item small pr-0">News &amp;
+                                    Research</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-3152"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3152 nav-item">
+                                <a href="https://library.western.edu/lib" class="dropdown-item small pr-0">Library</a>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-11617"
+                                class="menu-item menu-item-type-post_type menu-item-object-program menu-item-11617 nav-item">
+                                <a href="https://western.edu/program/honors-program/" class="dropdown-item small pr-0">Honors
+                                    Program</a></li>
+                        </ul>
+                    </li>
+                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-75"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-75 nav-item">
+                        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                           aria-label="Admissions &amp; Aid" class="dropdown-toggle nav-link"
+                           id="menu-item-dropdown-75">Admissions &amp; Aid</a>
+                        <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-75" role="menu">
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-46"
+                                class="menu-item-callout menu-item menu-item-type-post_type menu-item-object-page nav-item menu-item-46">
+                                <p class="h5">Learn about financial aid and applying to Western.</p><a
+                                    href="https://western.edu/admissions-aid/" class="btn btn-primary mt-3">Admissions
+                                &amp; Aid</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-86"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86 nav-item">
+                                <a href="https://western.edu/admissions-aid/financial-aid/"
+                                   class="dropdown-item small pr-0">Financial Aid</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7358"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7358 nav-item">
+                                <a href="https://western.edu/admissions-aid/admissions/"
+                                   class="dropdown-item small pr-0">Admissions</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7359"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7359 nav-item">
+                                <a href="https://western.edu/admissions-aid/tuition-costs/"
+                                   class="dropdown-item small pr-0">Tuition &amp; Costs</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7360"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7360 nav-item">
+                                <a href="https://western.edu/admissions-aid/visit-western/"
+                                   class="dropdown-item small pr-0">Visit Western</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7361"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7361 nav-item">
+                                <a href="https://western.edu/admissions-aid/apply/" class="dropdown-item small pr-0">Apply</a>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-11506"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11506 nav-item">
+                                <a href="https://western.edu/admissions-aid/admissions/admitted-students/"
+                                   class="dropdown-item small pr-0">Admitted Students</a></li>
+                        </ul>
+                    </li>
+                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-74"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-74 nav-item">
+                        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                           aria-label="Student Life" class="dropdown-toggle nav-link" id="menu-item-dropdown-74">Student
+                            Life</a>
+                        <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-74" role="menu">
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-48"
+                                class="menu-item-callout menu-item menu-item-type-post_type menu-item-object-page nav-item menu-item-48">
+                                <p class="h5">See how Western students live and learn.</p><a
+                                    href="https://western.edu/student-life/" class="btn btn-primary mt-3">Student
+                                Life</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7362"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7362 nav-item">
+                                <a href="https://western.edu/student-life/residence-life-housing/"
+                                   class="dropdown-item small pr-0">Residence Life &amp; Housing</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7366"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7366 nav-item">
+                                <a href="https://western.edu/student-life/student-affairs/"
+                                   class="dropdown-item small pr-0">Student Affairs</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-12597"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12597 nav-item">
+                                <a href="https://western.edu/clubs-orgs/" class="dropdown-item small pr-0">Clubs and
+                                    Organizations</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7363"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7363 nav-item">
+                                <a href="https://western.edu/student-life/campus-recreation/"
+                                   class="dropdown-item small pr-0">Campus Recreation</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7364"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7364 nav-item">
+                                <a href="https://western.edu/student-life/health-wellness/"
+                                   class="dropdown-item small pr-0">Health &amp; Wellness</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7365"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7365 nav-item">
+                                <a href="https://western.edu/student-life/safety-security/"
+                                   class="dropdown-item small pr-0">Safety &amp; Security</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7368"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7368 nav-item">
+                                <a href="https://western.edu/student-life/multicultural-center/"
+                                   class="dropdown-item small pr-0">Multicultural Center</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7367"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7367 nav-item">
+                                <a href="https://western.edu/student-life/lead/" class="dropdown-item small pr-0">LEAD:
+                                    Leadership, Engagement and Development</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-7369"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7369 nav-item">
+                                <a href="https://western.edu/student-life/epic-mentorship-program/"
+                                   class="dropdown-item small pr-0">EPIC Mentorship Program</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-11670"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11670 nav-item">
+                                <a href="https://western.edu/student-life/career-services/"
+                                   class="dropdown-item small pr-0">Career Services</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                id="menu-item-16872"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16872 nav-item">
+                                <a href="https://western.edu/student-life/title-ix/" class="dropdown-item small pr-0">Title
+                                    IX and Community Standards</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="main-nav-extras d-md-none">
+                    <div class="mt-3 mb-4">
+                        <ul id="menu-apply-visit-1" class="navbar-nav flex-row justify-content-between">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7389"><a
+                                    href="https://western.edu/admissions-aid/apply/">Apply</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5698"><a
+                                    href="https://western.edu/admissions-aid/visit-western/">Visit</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11316"><a
+                                    href="https://western.edu/alumni/foundation/">Give</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-menu-extra" id="nav_menu-6"><h2
+                            class="h4 footer__menu-header small text-uppercase text-primary" tabindex="0">Resources
+                        For</h2>
+                        <div class="menu-pre-header-container">
+                            <ul id="menu-pre-header-1" class="menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a
+                                        title=" " href="https://western.edu/current-students/">Current Students</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6011"><a
+                                        href="https://western.edu/alumni/">Alumni</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a
+                                        href="https://western.edu/parents-family/">Parents &amp; Family</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9300"><a
+                                        href="https://western.edu/athletics/">Athletics</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7390"><a
+                                        href="https://western.edu/covid-19-updates/">COVID-19 Updates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="site-main">
     <script type="text/javascript">
-        function getCourseDescription(course){
+        function getCourseDescription(course) {
 
         }
     </script>
@@ -8,38 +770,51 @@
     <h2>Overview</h2>
     <p>The Information Security emphasis (also referred to as “Cyber-security”)
         will introduce you to principles and concepts of information security and hacking.
-        Coursework uses real-world examples to illustrate attacks on computer systems and networks and teaches you basic hacking concepts with defensive measures. As a computer scientist, you’ll also need to be more than technically proficient. Reading, writing, critical analysis and presentation skills are essential for those who wish to do more than develop software.
-        The dynamic blend of Western’s liberal arts and computer science courses will provide you with the hard and soft skills necessary to manage people and projects.
+        Coursework uses real-world examples to illustrate attacks on computer systems and networks and teaches you basic
+        hacking concepts with defensive measures. As a computer scientist, you’ll also need to be more than technically
+        proficient. Reading, writing, critical analysis and presentation skills are essential for those who wish to do
+        more than develop software.
+        The dynamic blend of Western’s liberal arts and computer science courses will provide you with the hard and soft
+        skills necessary to manage people and projects.
 
-        To start building your resume, you can apply for competitive, paid internships with Lockheed Martin, Amazon, Northrup Grumman and more.
-        For opportunities on-campus, you can work for the Western IT Department and help protect the university’s cyber network.
-        Due to the increasing demand for this skillset, you’ll enter the workforce prepared for challenging work and great career opportunities.</p>
-    <style>
-        table {
-            border-spacing: 30px;
-        }
-        h1{
-            font-family: Lato;
-            font-size:95px;
-            line-height:90px;
-        }
-        h2{
-            font-family: Lato;
-            font-size: 46px;
-            line-height: 52px;
-        }
-        p{
-            font-family: Lato;
-            font-size: 20px;
-            line-height: 30px;
-        }
-    </style>
+        To start building your resume, you can apply for competitive, paid internships with Lockheed Martin, Amazon,
+        Northrup Grumman and more.
+        For opportunities on-campus, you can work for the Western IT Department and help protect the university’s cyber
+        network.
+        Due to the increasing demand for this skillset, you’ll enter the workforce prepared for challenging work and
+        great career opportunities.</p>
+
+    <hr>
+    <!--    <style>-->
+    <!--        table {-->
+    <!--            border-spacing: 30px;-->
+    <!--        }-->
+
+    <!--        h1 {-->
+    <!--            font-family: Lato;-->
+    <!--            font-size: 95px;-->
+    <!--            line-height: 90px;-->
+    <!--        }-->
+
+    <!--        h2 {-->
+    <!--            font-family: Lato;-->
+    <!--            font-size: 46px;-->
+    <!--            line-height: 52px;-->
+    <!--        }-->
+
+    <!--        p {-->
+    <!--            font-family: Lato;-->
+    <!--            font-size: 20px;-->
+    <!--            line-height: 30px;-->
+    <!--        }-->
+    <!--    </style>-->
     <h2>Faculty</h2>
     <ul>
         <li><a href="https://western.edu/people/doug-macgregor-phd/">Doug Macgregor</a></li>
         <li><a href="https://western.edu/people/marc-rubin-phd/">Marc Rubin</a></li>
         <li><a href="https://western.edu/people/samuel-micka/">Sam Micka</a></li>
     </ul>
+    <hr>
     <!---<h2> Program Certifications</h2>
     <p>NSA CAE-CD Certified</p>
      <img src = "https://cyber.tstc.edu/wp-content/uploads/2018/09/Seals-1.jpg"
@@ -47,16 +822,17 @@
           <heading class="bordered border-light">
         <h2 class="small expanded">Program Requirements</h2>
     </heading>--->
-    <table class="Program-requirements">
+    <h2>Program Requirements</h2>
+    <table class="Program-requirements table">
         <thead>
         <tr>
-            <td><h3>CS core:</h3></td>
+            <h2>CS core:</h2>
         </tr>
         <tr>
             <th>Code</th>
             <th>Class Name</th>
             <th>Credits</th>
-            <th>Professor</th>
+            <th>Instructor</th>
         </tr>
         </thead>
         <tbody>
@@ -75,6 +851,7 @@
             <td>CS 195</td>
             <td><a href="CourseInfo.html?course=DBMS&">Database Management System</a></td>
             <td>3</td>
+            <td></td>
         </tr>
         <tr>
             <td>CS 250</td>
@@ -119,13 +896,25 @@
             <td>Marc Rubin</td>
         </tr>
         <tr>
-            <td><h2>Total Credits</h2></td>
-            <td>                      </td>
-            <td><h2>30</h2></td>
+            <td><h4>Total Credits</h4></td>
+            <td></td>
+            <td><h4>30</h4></td>
+        </tr>
+    </table>
+
+    <table class="Program-requirements table">
+        <thead>
+        <tr>
+            <h2>Information Security Emphasis:</h2>
         </tr>
         <tr>
-            <td><h3>Information Security Emphasis:</h3></td>
+            <th>Code</th>
+            <th>Class Name</th>
+            <th>Credits</th>
+            <th>Instructor</th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
             <td>CS 170</td>
             <td><a href="CourseInfo.html?course=ISH&">Information Security and Hacking</a></td>
@@ -136,6 +925,7 @@
             <td>CS 235</td>
             <td><a href="CourseInfo.html?course=CN&">Computers Networks</a></td>
             <td>3</td>
+            <td></td>
         </tr>
         <tr>
             <td>CS 360</td>
@@ -159,14 +949,19 @@
             <td>MAT 140</td>
             <td><a href="CourseInfo.html?course=CA&">College Algebra</a></td>
             <td>3</td>
+            <td></td>
         </tr>
         <tr>
-            <td><h2>Total Credits</h2></td>
-            <td>                      </td>
-            <td><h2>18</h2></td>
-        </tbody>
+            <td><h4>Total Credits</h4></td>
+            <td></td>
+            <td><h4>18</h4></td>
+            <td></td>
         </tr>
+        </tbody>
     </table>
+
+    <hr>
+
     <h2>Degree Plan</h2>
     <p>Check out our degree plan to find more information on what each year in our program will look like!</p>
     <p><a href="DegreePlan.html">Degree Plan</a></p>
@@ -174,13 +969,17 @@
     <p>Contact either Marc or Doug for any questions or speaking opportunities!</p>
     <a href="ContactForm.html">Contact Form</a>
     <h2>Career Info</h2>
-    <p>For more information on careers in cyber-security provided by burning glass technologies, check out the link below!</p>
+    <p>For more information on careers in cyber-security provided by burning glass technologies, check out the link
+        below!</p>
     <p><a href="CareerInfo.html">Career Information</a></p>
     <h2>Informational resources</h2>
     <p>For more information on how to stay safe online and protect yourself, check out these resources!</p>
     <ul>
-        <li><a href="https://www.consumer.ftc.gov/articles/protect-your-personal-information-and-data">Protecting your personal information</a></li>
+        <li><a href="https://www.consumer.ftc.gov/articles/protect-your-personal-information-and-data">Protecting your
+            personal information</a></li>
         <li><a href="https://www.fbi.gov/scams-and-safety/on-the-internet">Protecting your devices</a></li>
-        <li><a href="https://www.cisa.gov/free-cybersecurity-services-and-tools">Free cyber-security Tools and Services</a></li>
+        <li><a href="https://www.cisa.gov/free-cybersecurity-services-and-tools">Free cyber-security Tools and
+            Services</a></li>
     </ul>
 </main>
+</body>
