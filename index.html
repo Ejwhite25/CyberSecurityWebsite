@@ -3,6 +3,47 @@
     <title>Degree Plan</title>
     <link rel="stylesheet" id="main-css-css" href="https://western.edu/wp-content/themes/wcu/dist/css/style.css"
           media="all">
+    <script src="https://catalog.western.edu/js/lfjs.js"></script>
+    <script src="https://catalog.western.edu/js/jquery.js"></script>
+    <script>
+        function showCourse(domobj,width) {
+            if (typeof coursebubblewidth == "undefined") {
+                if (typeof bubblewidth == "undefined") {
+                    var coursebubblewidth = 400;
+                } else
+                    var coursebubblewidth = bubblewidth;
+            }
+            function showCourseReady(req) {
+                if ($(req).find("course").length) {
+                    var html = $(req).find("course").text();
+                } else {
+                    var html = "<p>Course information cannot be found. This course may" +
+                        "no longer be offered. If you beleive there is an error or" +
+                        "require more information, please contact the course" +
+                        "department. </p>"
+                }
+                lfjs.bubble(domobj, html, {width: coursebubblewidth});
+            }
+            function showCourseError(req) {
+                var html = "<p>An error occurred trying to load course information. Please try your request again later.( " + req.status + " - " + req.statusText + ")</p>";
+                lfjs.bubble(domobj, html, {
+                    width:coursebubblewidth
+                });
+            }
+            domobj.blur();
+            var gcurl = "proxy.php?code="+encodeURIComponent(which);
+            if (typeof edition != "undefined" && typeof archivepath != "undefined") {
+                gcurl += "&edition=" + encodeURIComponent(edition);
+            }
+            $.ajax({
+                url: gcurl,
+                success: showCourseReady,
+                error: showCourseError
+            });
+            lfjs.bubble(domobj,"Loading course description...", {width: coursebubblewidth});
+            return true;
+        }
+    </script>
 </head>
 
 <body>
@@ -761,11 +802,6 @@
     </nav>
 </header>
 <main class="site-main">
-    <script type="text/javascript">
-        function getCourseDescription(course) {
-
-        }
-    </script>
     <h1>Information Security</h1>
     <h2>Overview</h2>
     <p>The Information Security emphasis (also referred to as “Cyber-security”)
@@ -838,7 +874,7 @@
         <tbody>
         <tr>
             <td>CS 190</td>
-            <td><a href="CourseInfo.html?course=CSI&">Computer Science I</a></td>
+            <td><a href ="#" onclick="return showCourse('CS 190');">Computer Science I</a></td>
             <td>3</td>
             <td>Marc Rubin</td>
         </tr>
