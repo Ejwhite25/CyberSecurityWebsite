@@ -29,7 +29,7 @@
             document.getElementById("description").innerHTML = this.responseText;
         }
     };
-    var url = "https://catalog.western.edu/ribbit/index.cgi?page=getcourse.rjs&code=CS%20" + params["code"];
+    var url = "https://catalog.western.edu/ribbit/index.cgi?page=getcourse.rjs&code=CS%20" + params["course"];
     console.log(url);
     xhttp.open("GET",url,true);
     xhttp.send();
