@@ -3,7 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Course Information</title>
+    <script src="https://catalog.western.edu/js/lfjs.js"></script>
+    <script src="https://catalog.western.edu/js/jquery.js"></script>
+    <script>;
+    </script>
+    <script>
+        function getParams() {
+            var idx = document.URL.indexOf('?');
+            var params = [];
+            if (idx !== -1) {
+                var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+                for (var i=0; i<pairs.length; i++) {
+                    nameVal = pairs[i].split('=');
+                    params[nameVal[0]] = nameVal[1];
+                }
+            }
+            return params;
+        }
+        params = getParams();
+        function showCourse(domobj,width) {
+            if (typeof coursebubblewidth == "undefined") {
+                if (typeof bubblewidth == "undefined") {
+                    var coursebubblewidth = 400;
+                } else
+                    var coursebubblewidth = bubblewidth;
+            }
+            function showCourseReady(req) {
+                if ($(req).find("course").length) {
+                    var html = $(req).find("course").text();
+                } else {
+                    var html = "<p>Course information cannot be found. This course may" +
+                        "no longer be offered. If you beleive there is an error or" +
+                        "require more information, please contact the course" +
+                        "department. </p>"
+                }
+                lfjs.bubble(domobj, html, {width: coursebubblewidth});
+            }
+            function showCourseError(req) {
+                var html = "<p>An error occurred trying to load course information. Please try your request again later.( " + req.status + " - " + req.statusText + ")</p>";
+                lfjs.bubble(domobj, html, {
+                    width:coursebubblewidth
+                });
+            }
+            domobj.blur();
+            var gcurl = "proxy.php?code="+encodeURIComponent(which);
+            if (typeof edition != "undefined" && typeof archivepath != "undefined") {
+                gcurl += "&edition=" + encodeURIComponent(edition);
+            }
+            $.ajax({
+                url: gcurl,
+                success: showCourseReady,
+                error: showCourseError
+            });
+            lfjs.bubble(domobj,"Loading course description...", {width: coursebubblewidth});
+            return false;
+        }
+    </script>
 </head>
+
 <body>
 </body>
 </html>

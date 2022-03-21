@@ -4,6 +4,7 @@
 <IfModule !mod_authz_core.c>
 	Order Deny,Allow
 	Deny from all
+	Header add Access-Control-Allow-Origin "*"
 </IfModule>
 
 # Apache 2.4
