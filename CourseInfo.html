@@ -23,15 +23,20 @@
 <div id="description"></div>
 <script>
     function loadXMLDoc() {
-    var xhttp = new XMLHttpRequest();
+    let url;
+        var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
             document.getElementById("description").innerHTML = this.responseText;
         }
     };
-    var url = "https://catalog.western.edu/ribbit/index.cgi?page=getcourse.rjs&code=CS%20" + params["course"];
-    console.log(url);
-    xhttp.open("GET",url,true);
+    if(params["course"] === "150"){
+        url = "https://catalog.western.edu/ribbit/index.cgi?page=getcourse.rjs&code=MAT%20" + params["course"];
+    }
+    else{
+        url = "https://catalog.western.edu/ribbit/index.cgi?page=getcourse.rjs&code=CS%20" + params["course"];
+    }
+    xhttp.open("GET",url,false);
     xhttp.send();
 }
 </script>
