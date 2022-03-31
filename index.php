@@ -12,7 +12,7 @@
  *
  * @var bool
  */
-define('WP_USE_THEMES', false);
+const WP_USE_THEMES = false;
 include($_SERVER['DOCUMENT_ROOT']."/index.html");
 
 /** Loads the WordPress Environment and Template */
